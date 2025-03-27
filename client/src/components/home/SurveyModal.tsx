@@ -107,7 +107,7 @@ const SurveyModal = () => {
                 className="flex-1"
               >
                 <Button 
-                  className="w-full bg-[#1A365D] hover:bg-[#122A4A] text-white py-6 text-lg font-bold shadow-lg hover:shadow-xl transform hover:scale-105 transition-all" 
+                  className="w-full bg-[#D4AF37] hover:bg-[#C69C22] text-black py-6 text-xl font-bold shadow-lg hover:shadow-xl transform hover:scale-105 transition-all border-2 border-black rounded-xl" 
                   onClick={closeSurveyModal}
                 >
                   Take Survey
