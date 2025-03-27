@@ -41,7 +41,7 @@ const GameSection = () => {
       id="game" 
       className="py-20 relative bg-gradient-to-r from-[#F8F7F2] to-[#F0EDDE]"
       style={{
-        backgroundImage: "url('https://images.unsplash.com/photo-1544649064-510c62b21f91?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2000&q=80')",
+        backgroundImage: "url('https://images.unsplash.com/photo-1569949381669-ecf31ae8e613?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2000&q=80')",
         backgroundSize: 'cover',
         backgroundPosition: 'center',
         backgroundAttachment: 'fixed',
@@ -49,7 +49,7 @@ const GameSection = () => {
       }}
     >
       {/* Overlay for better content visibility */}
-      <div className="absolute inset-0 bg-[#1A365D] opacity-80"></div>
+      <div className="absolute inset-0 bg-[#1A365D] opacity-85"></div>
       
       <div className="container relative z-10 mx-auto px-6">
         <div className="text-center mb-10">
@@ -81,8 +81,8 @@ const GameSection = () => {
               <div className="rounded-full bg-[#D4AF37] bg-opacity-20 w-16 h-16 flex items-center justify-center mx-auto mb-4">
                 <Users className="h-8 w-8 text-[#D4AF37]" />
               </div>
-              <h3 className="text-xl font-semibold mb-2">Compare & Share</h3>
-              <p className="text-slate-200">See how your choices compare to other travelers on our global leaderboard.</p>
+              <h3 className="text-xl font-semibold mb-2">Share Your Results</h3>
+              <p className="text-slate-200">Download and share your unique Qatar travel personality on social media.</p>
             </div>
           </div>
         </div>

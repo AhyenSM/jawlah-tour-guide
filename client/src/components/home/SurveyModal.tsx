@@ -53,6 +53,9 @@ const SurveyModal = () => {
             <div className="inline-block p-3 rounded-full bg-[#1A365D] text-white mb-4">
               <ClipboardList className="h-6 w-6" />
             </div>
+            <div className="text-[#D4AF37] font-medium mb-2">
+              Your Opinion Matters
+            </div>
             <h3 className="font-bold text-2xl md:text-3xl text-[#1A365D] dark:text-[#D4AF37] mb-3">Help Shape Jawlah</h3>
             <p className="text-slate-600 dark:text-slate-300 max-w-md mx-auto">
               Your feedback will directly influence our platform and Qatar's tourism experience.
