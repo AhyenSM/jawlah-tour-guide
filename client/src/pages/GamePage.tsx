@@ -1,10 +1,13 @@
-import { useState } from 'react';
+import { useState, useEffect } from 'react';
 import { Link } from 'wouter';
 import { Button } from '@/components/ui/button';
+import { ArrowLeft } from 'lucide-react';
 import GameIntro from '@/components/game/GameIntro';
 import GameContainer from '@/components/game/GameContainer';
 import GameResults from '@/components/game/GameResults';
 import { useGameState } from '@/hooks/useGameState';
+import { QueryClientProvider } from '@tanstack/react-query';
+import { queryClient } from '@/lib/queryClient';
 
 const GamePage = () => {
   const [gameState, setGameState] = useState<'intro' | 'playing' | 'results'>('intro');
@@ -16,16 +19,20 @@ const GamePage = () => {
     handleScenarioChoice,
     finalScore,
     travelerType,
-    travelerDescription
+    travelerDescription,
+    isGameCompleted
   } = useGameState();
+
+  // Effect to show results when game is completed
+  useEffect(() => {
+    if (isGameCompleted) {
+      setGameState('results');
+    }
+  }, [isGameCompleted]);
 
   const startGame = () => {
     resetGame();
     setGameState('playing');
-  };
-
-  const showResults = () => {
-    setGameState('results');
   };
 
   const playAgain = () => {
@@ -39,7 +46,7 @@ const GamePage = () => {
         <div className="mb-8">
           <Link href="/">
             <Button variant="ghost" className="flex items-center space-x-2">
-              <i className="fas fa-arrow-left"></i>
+              <ArrowLeft className="h-4 w-4" />
               <span>Back to Home</span>
             </Button>
           </Link>
@@ -60,12 +67,7 @@ const GamePage = () => {
             currentScenario={currentScenario}
             totalScenarios={totalScenarios}
             currentScore={currentScore}
-            onChoice={(scenarioId, choiceId, points) => {
-              handleScenarioChoice(scenarioId, choiceId, points);
-              if (currentScenario === totalScenarios) {
-                showResults();
-              }
-            }}
+            onChoice={handleScenarioChoice}
           />
         )}
         
