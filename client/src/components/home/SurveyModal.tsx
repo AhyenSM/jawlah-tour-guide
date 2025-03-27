@@ -1,60 +1,116 @@
+import { useEffect } from 'react';
 import { Button } from '@/components/ui/button';
 import { useSurvey } from '@/context/SurveyContext';
 import { JOTFORM_SURVEY_URL } from '@/lib/constants';
+import { X, ClipboardList, Award, PenTool } from 'lucide-react';
 
 const SurveyModal = () => {
   const { isModalOpen, closeSurveyModal } = useSurvey();
 
+  // Prevent body scroll when modal is open
+  useEffect(() => {
+    if (isModalOpen) {
+      document.body.style.overflow = 'hidden';
+    } else {
+      document.body.style.overflow = 'unset';
+    }
+
+    return () => {
+      document.body.style.overflow = 'unset';
+    };
+  }, [isModalOpen]);
+
   if (!isModalOpen) return null;
 
   return (
-    <div className="fixed inset-0 z-50 flex items-center justify-center">
+    <div className="fixed inset-0 z-50 flex items-center justify-center animate-fadeIn">
+      {/* Backdrop with blur effect */}
       <div 
-        className="absolute inset-0 bg-black bg-opacity-50 modal"
+        className="absolute inset-0 bg-black/70 backdrop-blur-sm"
         onClick={closeSurveyModal}
       ></div>
-      <div className="relative bg-white rounded-xl max-w-xl w-full max-h-[90vh] overflow-y-auto p-6 md:p-8">
-        <button 
-          className="absolute top-4 right-4 text-slate-400 hover:text-slate-600"
-          onClick={closeSurveyModal}
-        >
-          <i className="fas fa-times text-xl"></i>
-        </button>
-        <div className="text-center mb-6">
-          <div className="inline-block p-3 rounded-full bg-[#1A365D] text-white mb-3">
-            <i className="fas fa-clipboard-list text-2xl"></i>
-          </div>
-          <h3 className="font-poppins font-bold text-2xl text-[#1A365D] mb-2">Help Shape Jawlah</h3>
-          <p className="text-slate-600">
-            Your feedback will directly influence our platform. Complete our survey for exclusive early access benefits!
-          </p>
+      
+      {/* Modal container */}
+      <div className="relative bg-white dark:bg-slate-900 rounded-2xl max-w-xl w-full max-h-[90vh] overflow-hidden shadow-2xl">
+        {/* Background pattern */}
+        <div className="absolute top-0 right-0 w-full h-48 bg-[#1A365D] opacity-10 
+                      bg-[radial-gradient(#D4AF37_1px,transparent_1px)] [background-size:24px_24px]">
         </div>
-        <div className="text-center">
-          <p className="mb-6">
-            We're redirecting you to our brief survey. It takes less than 5 minutes to complete.
-          </p>
-          <div className="flex flex-col md:flex-row space-y-3 md:space-y-0 md:space-x-3">
-            <Button 
-              variant="secondary" 
-              className="flex-1"
-              onClick={closeSurveyModal}
-            >
-              Not Now
-            </Button>
-            <a 
-              href={JOTFORM_SURVEY_URL} 
-              target="_blank" 
-              rel="noopener noreferrer"
-              className="flex-1"
-            >
+        
+        {/* Content area */}
+        <div className="relative z-10 p-6 md:p-8">
+          {/* Close button */}
+          <button 
+            className="absolute top-4 right-4 text-slate-400 hover:text-slate-600 dark:text-slate-500 dark:hover:text-slate-300 p-2 rounded-full hover:bg-slate-100 dark:hover:bg-slate-800 transition-colors"
+            onClick={closeSurveyModal}
+            aria-label="Close modal"
+          >
+            <X className="h-5 w-5" />
+          </button>
+          
+          {/* Header */}
+          <div className="text-center mb-8">
+            <div className="inline-block p-3 rounded-full bg-[#1A365D] text-white mb-4">
+              <ClipboardList className="h-6 w-6" />
+            </div>
+            <h3 className="font-bold text-2xl md:text-3xl text-[#1A365D] dark:text-[#D4AF37] mb-3">Help Shape Jawlah</h3>
+            <p className="text-slate-600 dark:text-slate-300 max-w-md mx-auto">
+              Your feedback will directly influence our platform and Qatar's tourism experience.
+            </p>
+          </div>
+          
+          {/* Benefits */}
+          <div className="bg-slate-50 dark:bg-slate-800/50 rounded-xl p-4 mb-6">
+            <h4 className="font-medium text-[#1A365D] dark:text-white mb-3">Survey Benefits:</h4>
+            <ul className="space-y-2.5">
+              <li className="flex items-start">
+                <div className="h-5 w-5 rounded-full bg-[#D4AF37]/20 flex items-center justify-center mt-0.5 mr-2">
+                  <Award className="h-3 w-3 text-[#D4AF37]" />
+                </div>
+                <span className="text-sm text-slate-700 dark:text-slate-300">Exclusive early access to Jawlah features</span>
+              </li>
+              <li className="flex items-start">
+                <div className="h-5 w-5 rounded-full bg-[#D4AF37]/20 flex items-center justify-center mt-0.5 mr-2">
+                  <PenTool className="h-3 w-3 text-[#D4AF37]" />
+                </div>
+                <span className="text-sm text-slate-700 dark:text-slate-300">Help design the future of Qatar tourism</span>
+              </li>
+              <li className="flex items-start">
+                <div className="h-5 w-5 rounded-full bg-[#D4AF37]/20 flex items-center justify-center mt-0.5 mr-2">
+                  <Award className="h-3 w-3 text-[#D4AF37]" />
+                </div>
+                <span className="text-sm text-slate-700 dark:text-slate-300">Special discount code for future Jawlah services</span>
+              </li>
+            </ul>
+          </div>
+          
+          {/* Action buttons */}
+          <div className="text-center">
+            <p className="mb-6 text-sm text-slate-500 dark:text-slate-400">
+              The survey takes less than 5 minutes to complete.
+            </p>
+            <div className="flex flex-col sm:flex-row space-y-3 sm:space-y-0 sm:space-x-3">
               <Button 
-                variant="qatarBlue" 
-                className="w-full"
+                variant="outline" 
+                className="flex-1"
                 onClick={closeSurveyModal}
               >
-                Take Survey
+                Not Now
               </Button>
-            </a>
+              <a 
+                href={JOTFORM_SURVEY_URL} 
+                target="_blank" 
+                rel="noopener noreferrer"
+                className="flex-1"
+              >
+                <Button 
+                  className="w-full bg-[#1A365D] hover:bg-[#122A4A] text-white" 
+                  onClick={closeSurveyModal}
+                >
+                  Take Survey
+                </Button>
+              </a>
+            </div>
           </div>
         </div>
       </div>
