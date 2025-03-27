@@ -1,0 +1,37 @@
+"Create a fully free, deployable React-based landing page & interactive tour game for Jawlah, a new tour guide platform in Qatar.
+1. Landing Page (React + TailwindCSS, deployable for free)
+Hero Section:
+•	Background image or video showcasing Qatar’s landmarks (Souq Waqif, desert dunes, Museum of Islamic Art).
+•	Large "Jawlah – Coming Soon!" text with a Join Early Access button (redirects to Jotform survey).
+•	Short tagline: "Your gateway to immersive tour experiences in Qatar – Coming Soon!"
+Featured Sections:
+•	Survey Invite: "Help shape the future of travel in Qatar! Take our quick survey for exclusive perks!" (Redirects to Jotform survey link).
+•	Play the Tour Game: "Test your travel instincts with our Qatar-themed tour game!" (Redirects to the interactive game below).
+•	Jotform AI Chatbot: Embedded for user interaction & queries.
+Scroll-Based Announcement:
+•	"Launching Soon on App Store, Google Play & Web!" with app store icons.
+Footer:
+•	Social media links, email signup, and early access waitlist.
+________________________________________
+2. Interactive Game (Deployable for Free, Uses Twine or React-Based Game Framework)
+Game Concept:
+•	Theme: A guided tour simulation of Qatar where users make choices as a tourist navigating the city.
+•	Objective: Players interact with realistic travel scenarios based on our interview questionnaire and earn a "Traveler Score."
+•	Gameplay Mechanics:
+o	Multiple-choice questions & scenario-based storytelling.
+o	Challenges related to travel, history, and culture.
+o	Point-based scoring system (gamified experience).
+Example Scenarios (from Interview Questionnaire):
+1.	"You just landed in Doha. Do you hire a private guide, join a group, or explore solo?"
+2.	"Your guide offers you a traditional Qatari meal. Do you try it or stick to what you know?"
+3.	"You’re booking a desert safari, but it’s peak time. Do you pay a premium for a priority slot or wait?"
+Game Implementation:
+•	React-based interactive storytelling game OR a Twine-based branching narrative (free & deployable).
+•	User selections stored (if using React, data logged in local storage).
+•	End of the game: Players get a Traveler Score + optional signup for Jawlah early access.
+________________________________________
+Final Notes:
+•	The landing page + game should be 100% freely deployable (on Replit or Netlify).
+•	The game integrates seamlessly with the landing page (either embedded or linked).
+•	The Jotform AI chatbot is included for user engagement.
+•	Ensure mobile responsiveness for both the landing page & game.
