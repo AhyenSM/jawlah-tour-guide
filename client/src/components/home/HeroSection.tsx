@@ -12,7 +12,7 @@ const HeroSection = () => {
     {
       title: "Welcome to <span class='text-[#D4AF37]'>Jawlah</span>",
       subtitle: "Your gateway to immersive tour experiences in Qatar",
-      bgClass: "bg-[url('https://images.unsplash.com/photo-1565623833408-d77e39b88af6?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2000&q=80')]",
+      bgClass: "bg-[url('https://images.unsplash.com/photo-1565623833408-d77e39b88af6?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2000&q=80')]", // Museum of Islamic Art in Qatar
       action: { 
         text: "Join Early Access", 
         onClick: () => openSurveyModal()
@@ -21,7 +21,7 @@ const HeroSection = () => {
     {
       title: "Meet <span class='text-[#D4AF37]'>Zara</span>",
       subtitle: "Chat with our AI travel assistant for personalized Qatar recommendations",
-      bgClass: "bg-[url('https://images.unsplash.com/photo-1569949381669-ecf31ae8e613?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2000&q=80')]",
+      bgClass: "bg-[url('https://images.unsplash.com/photo-1569949381669-ecf31ae8e613?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2000&q=80')]", // Doha skyline at night in Qatar
       action: { 
         text: "Chat Now", 
         href: "#chatbot"
@@ -30,7 +30,7 @@ const HeroSection = () => {
     {
       title: "Experience the <span class='text-[#D4AF37]'>Adventure</span>",
       subtitle: "Play our interactive travel adventure game and discover your travel personality",
-      bgClass: "bg-[url('https://images.unsplash.com/photo-1591409523839-85d0928cf0c7?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2070&q=80')]",
+      bgClass: "bg-[url('https://images.unsplash.com/photo-1554709618-762a4a5f6933?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2069&q=80')]", // Qatar desert landscape
       action: { 
         text: "Play Now", 
         href: "/game"

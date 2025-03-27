@@ -14,10 +14,10 @@ const HomePage = () => {
       <Navbar />
       <HeroSection />
       <FeaturesSection />
-      <DestinationsShowcase />
+      <ChatbotSection /> 
       <GameSection />
       <AppAnnouncementBanner />
-      <ChatbotSection />
+      <DestinationsShowcase />
       <FooterSection />
       <SurveyModal />
     </div>

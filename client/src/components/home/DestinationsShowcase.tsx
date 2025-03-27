@@ -9,42 +9,42 @@ const DestinationsShowcase = () => {
     {
       name: "Museum of Islamic Art",
       location: "Doha",
-      description: "One of the world's great museums, dedicated to collecting, preserving, and displaying Islamic art.",
+      description: "One of the world's great museums, designed by I.M. Pei, dedicated to collecting, preserving, and displaying Islamic art.",
       image: "https://images.unsplash.com/photo-1565623833408-d77e39b88af6?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2000&q=80",
       comingSoon: true
     },
     {
       name: "Souq Waqif",
-      location: "Traditional Market",
-      description: "A vibrant marketplace offering traditional Qatari goods, spices, textiles, and authentic cuisine.",
+      location: "Traditional Market, Doha",
+      description: "A vibrant marketplace offering traditional Qatari goods, spices, textiles, and authentic cuisine in the heart of Doha.",
       image: "https://images.unsplash.com/photo-1569949609029-b18a57d2ff86?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1973&q=80",
       comingSoon: true
     },
     {
-      name: "Desert Safari",
-      location: "Inland Sea",
-      description: "Experience the breathtaking dunes of Qatar's desert in thrilling 4x4 adventures and traditional camps.",
-      image: "https://images.unsplash.com/photo-1591409523839-85d0928cf0c7?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2070&q=80",
+      name: "Khor Al Adaid",
+      location: "Inland Sea, Southeastern Qatar",
+      description: "Experience the magical Inland Sea where the desert meets the ocean, with breathtaking dunes and traditional Bedouin camps.",
+      image: "https://images.unsplash.com/photo-1554709618-762a4a5f6933?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2069&q=80",
       comingSoon: true
     },
     {
       name: "The Pearl-Qatar",
-      location: "Luxury Island",
-      description: "An artificial island featuring luxury shopping, dining, and Mediterranean-style marinas.",
+      location: "Luxury Island, Doha",
+      description: "A man-made island spanning nearly four million square meters, featuring luxury shopping, fine dining, and Mediterranean-style marinas.",
       image: "https://images.unsplash.com/photo-1605193420923-1936e220aac2?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2071&q=80",
       comingSoon: true
     },
     {
-      name: "Culinary Tours",
-      location: "Traditional Cuisine",
-      description: "Explore Qatar's rich culinary heritage through guided food tours of authentic local restaurants.",
-      image: "https://images.unsplash.com/photo-1584589167171-541ce45f1eea?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=987&q=80",
+      name: "Katara Cultural Village",
+      location: "Doha",
+      description: "A cultural hub showcasing Qatar's traditions and hosting international events, exhibitions, and performances throughout the year.",
+      image: "https://images.unsplash.com/photo-1594708053019-5336680bab1f?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2070&q=80",
       comingSoon: true
     },
     {
       name: "National Museum of Qatar",
-      location: "Cultural Heritage",
-      description: "A stunning museum designed to reflect a desert rose, showcasing Qatar's rich history and culture.",
+      location: "Doha",
+      description: "A stunning museum designed by Jean Nouvel to reflect a desert rose, showcasing Qatar's rich history and culture through immersive exhibits.",
       image: "https://images.unsplash.com/photo-1577102114237-9a16b85a021b?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2069&q=80",
       comingSoon: true
     }

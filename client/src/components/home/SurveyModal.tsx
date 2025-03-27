@@ -89,7 +89,7 @@ const SurveyModal = () => {
           
           {/* Action buttons */}
           <div className="text-center">
-            <p className="mb-6 text-sm text-slate-500 dark:text-slate-400">
+            <p className="mb-6 text-md font-medium text-slate-800 dark:text-white">
               The survey takes less than 5 minutes to complete.
             </p>
             <div className="flex flex-col sm:flex-row space-y-3 sm:space-y-0 sm:space-x-3">
