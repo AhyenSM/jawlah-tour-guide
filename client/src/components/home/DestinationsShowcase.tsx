@@ -3,32 +3,32 @@ const DestinationsShowcase = () => {
     {
       name: "Museum of Islamic Art",
       location: "Doha",
-      image: "https://images.unsplash.com/photo-1578895101408-1a6279bf5cf9?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80"
+      image: "https://images.unsplash.com/photo-1565623833408-d77e39b88af6?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2000&q=80"
     },
     {
       name: "Souq Waqif",
       location: "Traditional Market",
-      image: "https://images.unsplash.com/photo-1569323232079-33288785b2fe?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80"
+      image: "https://images.unsplash.com/photo-1569949609029-b18a57d2ff86?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1973&q=80"
     },
     {
       name: "Desert Safari",
       location: "Inland Sea",
-      image: "https://images.unsplash.com/photo-1594396555089-69822263e5c7?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80"
+      image: "https://images.unsplash.com/photo-1548786811-dd6e453ccca7?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2070&q=80"
     },
     {
       name: "The Pearl-Qatar",
       location: "Luxury Island",
-      image: "https://images.unsplash.com/photo-1545066838-83eca49d1352?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80"
+      image: "https://images.unsplash.com/photo-1605193420923-1936e220aac2?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2071&q=80"
     },
     {
       name: "Culinary Tours",
       location: "Traditional Cuisine",
-      image: "https://images.unsplash.com/photo-1541518763069-e9785e919a7f?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80"
+      image: "https://images.unsplash.com/photo-1584589167171-541ce45f1eea?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=987&q=80"
     },
     {
-      name: "National Museum",
+      name: "National Museum of Qatar",
       location: "Cultural Heritage",
-      image: "https://images.unsplash.com/photo-1619261253091-123ca412de2d?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80"
+      image: "https://images.unsplash.com/photo-1577102114237-9a16b85a021b?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2069&q=80"
     }
   ];
 

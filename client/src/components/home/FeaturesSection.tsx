@@ -44,14 +44,21 @@ const FeaturesSection = () => {
         <div className="mt-20 p-8 md:p-12 rounded-2xl blue-gradient text-white text-center">
           <h3 className="font-poppins font-bold text-2xl mb-4">Help Shape the Future of Travel in Qatar!</h3>
           <p className="mb-8 text-lg max-w-3xl mx-auto">Take our quick survey to share your travel preferences and get exclusive early access perks when we launch.</p>
-          <Button 
-            variant="qatarGold" 
-            size="xl"
-            onClick={openSurveyModal}
-            className="transform hover:scale-105"
-          >
-            Take the Survey
-          </Button>
+          
+          <div className="flex flex-col items-center">
+            <div className="mb-4 px-4 py-2 bg-white bg-opacity-20 backdrop-blur-sm rounded-lg inline-block">
+              <span className="text-[#D4AF37] font-bold">✦</span> Your Opinion Matters <span className="text-[#D4AF37] font-bold">✦</span>
+            </div>
+            
+            <Button 
+              variant="qatarGold" 
+              size="xl"
+              onClick={openSurveyModal}
+              className="transform hover:scale-105 shadow-lg"
+            >
+              Take the Survey
+            </Button>
+          </div>
         </div>
       </div>
     </section>

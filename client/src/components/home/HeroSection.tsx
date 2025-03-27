@@ -12,7 +12,7 @@ const HeroSection = () => {
     {
       title: "Welcome to <span class='text-[#D4AF37]'>Jawlah</span>",
       subtitle: "Your gateway to immersive tour experiences in Qatar",
-      bgClass: "bg-[url('https://images.unsplash.com/photo-1534683251650-93e143f5f26b?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2000&q=80')]",
+      bgClass: "bg-[url('https://images.unsplash.com/photo-1577102114237-9a16b85a021b?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2000&q=80')]",
       action: { 
         text: "Join Early Access", 
         onClick: () => openSurveyModal()
@@ -21,7 +21,7 @@ const HeroSection = () => {
     {
       title: "Experience the <span class='text-[#D4AF37]'>Adventure</span>",
       subtitle: "Play our interactive travel adventure game and discover your travel personality",
-      bgClass: "bg-[url('https://images.unsplash.com/photo-1569752234616-38d9f54f96d0?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2000&q=80')]",
+      bgClass: "bg-[url('https://images.unsplash.com/photo-1548786811-dd6e453ccca7?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2000&q=80')]",
       action: { 
         text: "Play Now", 
         href: "/game"
