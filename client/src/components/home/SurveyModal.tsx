@@ -53,11 +53,11 @@ const SurveyModal = () => {
             <div className="inline-block p-3 rounded-full bg-[#1A365D] text-white mb-4">
               <ClipboardList className="h-6 w-6" />
             </div>
-            <div className="text-[#D4AF37] font-bold text-lg mb-2">
+            <div className="text-[#D4AF37] font-bold text-lg mb-2 bg-black/10 inline-block px-4 py-1 rounded-lg">
               ✦ Your Opinion Matters ✦
             </div>
             <h3 className="font-bold text-2xl md:text-3xl text-[#1A365D] dark:text-[#D4AF37] mb-3">Help Shape Jawlah</h3>
-            <p className="text-slate-800 dark:text-white text-lg max-w-md mx-auto font-medium">
+            <p className="text-slate-900 dark:text-white text-lg max-w-md mx-auto font-medium">
               Your feedback will directly influence our platform and Qatar's tourism experience.
             </p>
           </div>
@@ -70,32 +70,32 @@ const SurveyModal = () => {
                 <div className="h-5 w-5 rounded-full bg-[#D4AF37]/20 flex items-center justify-center mt-0.5 mr-2">
                   <Award className="h-3 w-3 text-[#D4AF37]" />
                 </div>
-                <span className="text-base font-medium text-slate-800 dark:text-white">Exclusive early access to Jawlah features</span>
+                <span className="text-base font-medium text-slate-900 dark:text-white">Exclusive early access to Jawlah features</span>
               </li>
               <li className="flex items-start">
                 <div className="h-5 w-5 rounded-full bg-[#D4AF37]/20 flex items-center justify-center mt-0.5 mr-2">
                   <PenTool className="h-3 w-3 text-[#D4AF37]" />
                 </div>
-                <span className="text-base font-medium text-slate-800 dark:text-white">Help design the future of Qatar tourism</span>
+                <span className="text-base font-medium text-slate-900 dark:text-white">Help design the future of Qatar tourism</span>
               </li>
               <li className="flex items-start">
                 <div className="h-5 w-5 rounded-full bg-[#D4AF37]/20 flex items-center justify-center mt-0.5 mr-2">
                   <Award className="h-3 w-3 text-[#D4AF37]" />
                 </div>
-                <span className="text-base font-medium text-slate-800 dark:text-white">Special discount code for future Jawlah services</span>
+                <span className="text-base font-medium text-slate-900 dark:text-white">Special discount code for future Jawlah services</span>
               </li>
             </ul>
           </div>
           
           {/* Action buttons */}
           <div className="text-center">
-            <p className="mb-6 text-md font-medium text-slate-800 dark:text-white">
+            <p className="mb-6 text-md font-medium text-slate-900 dark:text-white">
               The survey takes less than 5 minutes to complete.
             </p>
             <div className="flex flex-col sm:flex-row space-y-3 sm:space-y-0 sm:space-x-3">
               <Button 
                 variant="outline" 
-                className="flex-1"
+                className="flex-1 text-slate-900 dark:text-white hover:bg-slate-100 dark:hover:bg-slate-800"
                 onClick={closeSurveyModal}
               >
                 Not Now
