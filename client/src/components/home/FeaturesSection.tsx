@@ -41,8 +41,8 @@ const FeaturesSection = () => {
         </div>
         
         {/* Survey CTA */}
-        <div className="mt-20 p-8 md:p-12 rounded-2xl blue-gradient text-white text-center">
-          <h3 className="font-poppins font-bold text-2xl mb-4">Help Shape the Future of Travel in Qatar!</h3>
+        <div className="mt-20 p-8 md:p-12 rounded-2xl bg-[#1A365D] text-white text-center shadow-xl">
+          <h3 className="font-bold text-2xl mb-4 text-shadow-sm">Help Shape the Future of Travel in Qatar!</h3>
           <p className="mb-8 text-lg max-w-3xl mx-auto">Take our quick survey to share your travel preferences and get exclusive early access perks when we launch.</p>
           
           <div className="flex flex-col items-center">
@@ -51,10 +51,8 @@ const FeaturesSection = () => {
             </div>
             
             <Button 
-              variant="qatarGold" 
-              size="xl"
+              className="bg-[#D4AF37] hover:bg-[#B89A2F] text-[#1A365D] font-semibold px-8 py-6 text-lg transform hover:scale-105 shadow-lg"
               onClick={openSurveyModal}
-              className="transform hover:scale-105 shadow-lg"
             >
               Take the Survey
             </Button>
