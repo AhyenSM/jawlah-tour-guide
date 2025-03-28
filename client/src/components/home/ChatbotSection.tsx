@@ -32,7 +32,7 @@ export default function ChatbotSection() {
       id="chatbot" 
       className="py-24 relative"
       style={{
-        background: "url('https://images.unsplash.com/photo-1569949381669-ecf31ae8e613?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2000&q=80')",
+        background: "url('/assets/bashir-mohd-0gSM4u8zfA8-unsplash.jpg')",
         backgroundSize: 'cover',
         backgroundPosition: 'center',
         backgroundAttachment: 'fixed'
@@ -120,6 +120,11 @@ export default function ChatbotSection() {
                 />
               </CardContent>
             </Card>
+            <div className="text-center mt-4 bg-white bg-opacity-10 p-4 rounded-lg backdrop-blur-sm border border-white border-opacity-20">
+              <p className="text-[#D4AF37] font-medium">
+                Zara is still under development, please train Zara through a chat or voice interview.
+              </p>
+            </div>
           </div>
         </div>
       </div>
