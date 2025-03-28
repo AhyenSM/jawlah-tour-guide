@@ -10,15 +10,38 @@ import SurveyModal from '@/components/home/SurveyModal';
 
 const HomePage = () => {
   return (
-    <div className="min-h-screen">
+    <div className="min-h-screen flex flex-col">
       <Navbar />
-      <HeroSection />
-      <FeaturesSection />
-      <ChatbotSection /> 
-      <GameSection />
-      <AppAnnouncementBanner />
-      <DestinationsShowcase />
-      <FooterSection />
+      
+      {/* Full-width sections */}
+      <main className="flex-grow">
+        <HeroSection />
+        
+        <div id="features" className="section-container py-16">
+          <FeaturesSection />
+        </div>
+        
+        <div id="chatbot" className="bg-gray-50 dark:bg-gray-900 py-16">
+          <div className="section-container">
+            <ChatbotSection />
+          </div>
+        </div>
+        
+        <div id="game" className="section-container py-16">
+          <GameSection />
+        </div>
+        
+        <AppAnnouncementBanner />
+        
+        <div id="destinations" className="bg-gray-50 dark:bg-gray-900 py-16">
+          <div className="section-container">
+            <DestinationsShowcase />
+          </div>
+        </div>
+        
+        <FooterSection />
+      </main>
+      
       <SurveyModal />
     </div>
   );

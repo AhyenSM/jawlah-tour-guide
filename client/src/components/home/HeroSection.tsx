@@ -2,7 +2,6 @@ import { useState, useEffect } from 'react';
 import { Button } from '@/components/ui/button';
 import { useSurvey } from '@/context/SurveyContext';
 import { ChevronDown, ChevronRight } from 'lucide-react';
-import { Link } from 'wouter';
 
 const HeroSection = () => {
   const { openSurveyModal } = useSurvey();
@@ -55,7 +54,7 @@ const HeroSection = () => {
   };
 
   return (
-    <section className="relative h-screen overflow-hidden">
+    <section className="relative h-screen overflow-hidden pt-16">
       {slides.map((slide, index) => (
         <div 
           key={index}
@@ -67,31 +66,27 @@ const HeroSection = () => {
           <div className="absolute inset-0 bg-black bg-opacity-50"></div>
           
           <div className="absolute inset-0 flex items-center justify-center">
-            <div className="container mx-auto px-6 flex flex-col items-center text-white z-10">
+            <div className="section-container flex flex-col items-center text-white z-10">
               <h1 
-                className="font-poppins font-bold text-4xl md:text-6xl text-center mb-4 text-shadow-lg"
+                className="font-bold text-4xl md:text-6xl text-center mb-6 text-shadow-lg"
                 dangerouslySetInnerHTML={{ __html: slide.title }}
               />
-              <p className="text-xl md:text-2xl text-center max-w-2xl mb-12 text-shadow-sm">
+              <p className="text-xl md:text-2xl text-center max-w-2xl mb-12 text-shadow">
                 {slide.subtitle}
               </p>
               
               {slide.action.href ? (
-                <Link href={slide.action.href}>
+                <a href={slide.action.href}>
                   <Button 
-                    variant="qatarGold" 
-                    size="xl"
-                    className="transform hover:scale-105"
+                    className="bg-[#D4AF37] hover:bg-[#B89A2F] text-[#1A365D] font-semibold px-8 py-6 text-lg"
                   >
                     {slide.action.text}
                   </Button>
-                </Link>
+                </a>
               ) : (
                 <Button 
-                  variant="qatarGold" 
-                  size="xl"
+                  className="bg-[#D4AF37] hover:bg-[#B89A2F] text-[#1A365D] font-semibold px-8 py-6 text-lg"
                   onClick={slide.action.onClick}
-                  className="transform hover:scale-105"
                 >
                   {slide.action.text}
                 </Button>

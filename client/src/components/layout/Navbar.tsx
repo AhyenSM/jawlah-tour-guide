@@ -28,45 +28,49 @@ const Navbar = () => {
   };
 
   return (
-    <nav className={`fixed top-0 left-0 right-0 z-50 transition-all duration-300 ${scrolled ? 'bg-[#1A365D] shadow-md' : ''}`}>
-      <div className="container mx-auto px-4 py-3 flex items-center justify-between">
+    <nav className={`fixed top-0 left-0 right-0 z-50 transition-all duration-300 ${scrolled ? 'bg-[#1A365D] shadow-md' : 'bg-[#1A365D]/80 backdrop-blur-md'}`}>
+      <div className="section-container py-3 flex items-center justify-between">
         <div className="flex items-center">
           <Link href="/">
-            <div className="text-white font-poppins font-bold text-2xl cursor-pointer">
+            <div className="text-white font-bold text-2xl cursor-pointer flex items-center">
               <span className="text-[#D4AF37]">Jaw</span><span>lah</span>
-              <span className="font-amiri text-sm ml-1">جولة</span>
+              <span className="font-serif text-sm ml-1 text-[#D4AF37]">جولة</span>
             </div>
           </Link>
         </div>
-        <div className="hidden md:flex items-center space-x-6">
-          <a href="#features" className="text-white hover:text-[#D4AF37] transition-colors">Features</a>
-          <a href="#game" className="text-white hover:text-[#D4AF37] transition-colors">Tour Game</a>
-          <a href="#contact" className="text-white hover:text-[#D4AF37] transition-colors">Contact</a>
+        <div className="hidden md:flex items-center space-x-8">
+          <a href="#features" className="text-white hover:text-[#D4AF37] transition-colors font-medium">Features</a>
+          <a href="#chatbot" className="text-white hover:text-[#D4AF37] transition-colors font-medium">AI Assistant</a>
+          <a href="#game" className="text-white hover:text-[#D4AF37] transition-colors font-medium">Tour Game</a>
+          <a href="#destinations" className="text-white hover:text-[#D4AF37] transition-colors font-medium">Destinations</a>
           <Button 
-            variant="qatarGold" 
+            className="bg-[#D4AF37] hover:bg-[#B89A2F] text-[#1A365D] font-semibold"
             onClick={openSurveyModal}
           >
             Join Early Access
           </Button>
         </div>
         <button 
-          className="md:hidden text-white text-2xl" 
+          className="md:hidden text-white focus:outline-none" 
           onClick={toggleMobileMenu}
+          aria-label="Toggle menu"
         >
-          <i className="fas fa-bars"></i>
+          <svg xmlns="http://www.w3.org/2000/svg" className="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+            <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M4 6h16M4 12h16m-7 6h7" />
+          </svg>
         </button>
       </div>
       
       {/* Mobile menu */}
-      <div className={`md:hidden ${mobileMenuOpen ? 'block' : 'hidden'} bg-[#0F172A] bg-opacity-95 absolute w-full py-4`}>
-        <div className="container mx-auto px-6 flex flex-col space-y-4">
-          <a href="#features" className="text-white hover:text-[#D4AF37] transition-colors py-2">Features</a>
-          <a href="#game" className="text-white hover:text-[#D4AF37] transition-colors py-2">Tour Game</a>
-          <a href="#contact" className="text-white hover:text-[#D4AF37] transition-colors py-2">Contact</a>
+      <div className={`md:hidden ${mobileMenuOpen ? 'block' : 'hidden'} bg-[#1A365D] bg-opacity-98 backdrop-blur-md absolute w-full py-4 shadow-lg`}>
+        <div className="section-container flex flex-col space-y-4">
+          <a href="#features" className="text-white hover:text-[#D4AF37] transition-colors py-2 border-b border-[#2A436D] pb-2">Features</a>
+          <a href="#chatbot" className="text-white hover:text-[#D4AF37] transition-colors py-2 border-b border-[#2A436D] pb-2">AI Assistant</a>
+          <a href="#game" className="text-white hover:text-[#D4AF37] transition-colors py-2 border-b border-[#2A436D] pb-2">Tour Game</a>
+          <a href="#destinations" className="text-white hover:text-[#D4AF37] transition-colors py-2 border-b border-[#2A436D] pb-2">Destinations</a>
           <Button 
-            variant="qatarGold" 
+            className="w-full bg-[#D4AF37] hover:bg-[#B89A2F] text-[#1A365D] font-semibold"
             onClick={openSurveyModal}
-            className="w-full"
           >
             Join Early Access
           </Button>
