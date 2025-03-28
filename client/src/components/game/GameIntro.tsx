@@ -58,12 +58,14 @@ const GameIntro = ({ onStartGame }: GameIntroProps) => {
           {/* Big Play Button - Mobile/Tablet */}
           <div className="md:hidden flex justify-center">
             <Button 
+              variant="qatarGold" 
+              size="lg"
               onClick={onStartGame}
-              className={`group relative overflow-hidden survey-button px-12 py-8 rounded-full ${isButtonAnimated ? 'animate-pulse' : ''} hover:scale-110 transition-transform`}
+              className={`group relative overflow-hidden px-8 py-6 shadow-xl text-lg font-medium rounded-full ${isButtonAnimated ? 'animate-pulse' : ''} hover:scale-105 transition-transform`}
             >
               <div className="absolute inset-0 bg-gradient-to-r from-[#D4AF37]/0 via-white/30 to-[#D4AF37]/0 -translate-x-full group-hover:translate-x-full transition-transform duration-1000"></div>
-              <span className="flex items-center text-2xl font-extrabold">
-                <Play className="mr-3 h-8 w-8" fill="black" /> PLAY NOW
+              <span className="flex items-center text-lg font-semibold">
+                <Play className="mr-2 h-6 w-6" fill="white" /> PLAY NOW
               </span>
             </Button>
           </div>
@@ -71,12 +73,14 @@ const GameIntro = ({ onStartGame }: GameIntroProps) => {
           {/* Standard Button - Desktop */}
           <div className="hidden md:flex justify-start mt-8">
             <Button 
+              variant="qatarGold" 
+              size="lg"
               onClick={onStartGame}
-              className={`group relative overflow-hidden survey-button px-12 py-8 ${isButtonAnimated ? 'animate-pulse' : ''} hover:scale-110 transition-transform`}
+              className={`group relative overflow-hidden px-8 py-6 shadow-xl text-lg font-medium ${isButtonAnimated ? 'animate-pulse' : ''} hover:scale-105 transition-transform`}
             >
               <div className="absolute inset-0 bg-gradient-to-r from-[#D4AF37]/0 via-white/30 to-[#D4AF37]/0 -translate-x-full group-hover:translate-x-full transition-transform duration-1000"></div>
-              <span className="flex items-center text-2xl font-extrabold">
-                <Play className="mr-3 h-8 w-8" fill="black" /> Start Your Journey
+              <span className="flex items-center text-lg font-semibold">
+                <Play className="mr-2 h-6 w-6" fill="white" /> Start Your Journey
               </span>
             </Button>
           </div>
@@ -97,10 +101,10 @@ const GameIntro = ({ onStartGame }: GameIntroProps) => {
           {/* Big Play button overlay - Desktop */}
           <div className="hidden md:flex absolute top-0 left-0 w-full h-full items-center justify-center">
             <div 
-              className={`w-36 h-36 rounded-full bg-[#D4AF37] flex items-center justify-center border-8 border-black shadow-2xl cursor-pointer transform hover:scale-110 transition-transform duration-300 ${isButtonAnimated ? 'animate-pulse' : ''}`}
+              className={`w-24 h-24 rounded-full bg-[#D4AF37] flex items-center justify-center shadow-2xl cursor-pointer transform hover:scale-110 transition-transform duration-300 ${isButtonAnimated ? 'animate-pulse' : ''}`}
               onClick={onStartGame}
             >
-              <Play className="h-20 w-20 text-black ml-2" fill="currentColor" />
+              <Play className="h-12 w-12 text-white ml-2" fill="white" />
             </div>
           </div>
         </div>

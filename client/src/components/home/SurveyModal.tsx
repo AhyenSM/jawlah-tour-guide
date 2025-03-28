@@ -31,7 +31,7 @@ const SurveyModal = () => {
       ></div>
       
       {/* Modal container */}
-      <div className="relative bg-white dark:bg-slate-900 rounded-2xl max-w-xl w-full max-h-[90vh] overflow-y-auto shadow-2xl survey-container">
+      <div className="relative bg-white dark:bg-slate-900 rounded-2xl max-w-xl w-full max-h-[90vh] overflow-y-auto shadow-2xl">
         {/* Background pattern */}
         <div className="absolute top-0 right-0 w-full h-48 bg-[#1A365D] opacity-10 
                       bg-[radial-gradient(#D4AF37_1px,transparent_1px)] [background-size:24px_24px]">
@@ -107,7 +107,7 @@ const SurveyModal = () => {
                 className="flex-1"
               >
                 <Button 
-                  className="w-full survey-button hover:bg-[#C69C22] hover:shadow-xl transform hover:scale-105 transition-all" 
+                  className="w-full bg-[#D4AF37] hover:bg-[#C69C22] text-black py-6 text-xl font-bold shadow-lg hover:shadow-xl transform hover:scale-105 transition-all border-2 border-black rounded-xl" 
                   onClick={closeSurveyModal}
                 >
                   Take Survey

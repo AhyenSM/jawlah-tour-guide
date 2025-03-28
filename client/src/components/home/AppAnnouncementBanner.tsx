@@ -19,28 +19,28 @@ const AppAnnouncementBanner = () => {
       <div className="container mx-auto px-6 relative z-10">
         <div className="text-center">
           {/* Survey info */}
-          <div className="survey-container p-8 max-w-3xl mx-auto mb-12">
+          <div className="bg-white rounded-2xl p-8 max-w-3xl mx-auto mb-12 shadow-xl">
             <div className="inline-block p-3 rounded-full bg-[#1A365D] text-white mb-4">
               <ClipboardList className="h-6 w-6" />
             </div>
             
-            <h3 className="survey-text text-2xl md:text-3xl mb-3">
+            <h3 className="font-bold text-2xl md:text-3xl text-[#1A365D] mb-3">
               Help Shape the Future of Travel in Qatar!
             </h3>
             
             <div className="bg-slate-100 border-l-4 border-[#1A365D] p-4 rounded mb-6">
-              <p className="survey-text text-lg mb-2">
+              <p className="text-black font-bold text-lg mb-2">
                 Take our quick survey to share your travel preferences and get exclusive early access perks when we launch.
               </p>
             </div>
             
-            <div className="bg-[#D4AF37] text-black p-3 rounded-lg font-bold text-xl mb-6 border border-black">
+            <div className="bg-[#D4AF37] text-black p-3 rounded-lg font-bold text-xl mb-6">
               ✦ Your Opinion Matters ✦
             </div>
             
             <Button 
               onClick={openSurveyModal}
-              className="survey-button hover:bg-[#C69C22] hover:shadow-2xl transform hover:scale-105 transition-all"
+              className="bg-[#D4AF37] hover:bg-[#C69C22] text-black px-10 py-7 text-2xl font-bold rounded-xl shadow-xl hover:shadow-2xl transform hover:scale-105 transition-all border-2 border-black"
             >
               Take the Survey
             </Button>

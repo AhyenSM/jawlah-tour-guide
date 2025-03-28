@@ -12,28 +12,6 @@
   }
 }
 
-@layer components {
-  /* Make survey text always dark and visible */
-  .survey-text {
-    @apply !text-black !font-bold !text-2xl;
-  }
-
-  /* Force high contrast on all survey components */
-  .survey-container {
-    @apply !bg-white !shadow-xl !rounded-xl !border-4 !border-black;
-  }
-
-  /* Make all buttons more visible */
-  .survey-button {
-    @apply !bg-[#D4AF37] !text-black !font-extrabold !text-2xl !py-8 !px-10 !border-4 !border-black !rounded-xl !shadow-2xl;
-  }
-  
-  /* Make sure text is super visible in survey */
-  .survey-container h3, .survey-container p {
-    @apply !text-black !font-bold;
-  }
-}
-
 @layer utilities {
   .text-shadow-sm {
     text-shadow: 0 1px 2px rgba(0, 0, 0, 0.6);
