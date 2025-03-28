@@ -4,6 +4,7 @@ import GameIntro from '../game/GameIntro';
 import GameContainer from '../game/GameContainer';
 import GameResults from '../game/GameResults';
 import { useGameState } from '@/hooks/useGameState';
+import qatarDesertImage from '../../assets/abuli-munavary-RsvErh4eirg-unsplash.jpg';
 
 const GameSection = () => {
   const [gameState, setGameState] = useState<'intro' | 'playing' | 'results'>('intro');
@@ -41,9 +42,9 @@ const GameSection = () => {
       id="game" 
       className="py-20 relative bg-gradient-to-r from-[#F8F7F2] to-[#F0EDDE]"
       style={{
-        backgroundImage: "url('https://images.unsplash.com/photo-1569949381669-ecf31ae8e613?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2000&q=80')",
+        backgroundImage: `url(${qatarDesertImage})`,
         backgroundSize: 'cover',
-        backgroundPosition: 'center',
+        backgroundPosition: 'center top',
         backgroundAttachment: 'fixed',
         backgroundBlendMode: 'overlay'
       }}
