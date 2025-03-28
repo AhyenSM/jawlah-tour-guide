@@ -3,6 +3,11 @@ import { Button } from '@/components/ui/button';
 import { useSurvey } from '@/context/SurveyContext';
 import { ChevronDown, ChevronRight } from 'lucide-react';
 
+// Import Qatar-specific images
+import qatarMuseumImage from '../../assets/florian-wehde-Do6yoytec5E-unsplash.jpg';
+import qatarTowerImage from '../../assets/bashir-mohd-0gSM4u8zfA8-unsplash.jpg';
+import qatarCulturalPathImage from '../../assets/jaanus-jagomagi-AZJAIiIn6BY-unsplash.jpg';
+
 const HeroSection = () => {
   const { openSurveyModal } = useSurvey();
   const [currentSlide, setCurrentSlide] = useState(0);
@@ -11,7 +16,7 @@ const HeroSection = () => {
     {
       title: "Welcome to <span class='text-[#D4AF37]'>Jawlah</span>",
       subtitle: "Your gateway to immersive tour experiences in Qatar",
-      bgClass: "bg-[url('https://images.unsplash.com/photo-1565623833408-d77e39b88af6?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2000&q=80')]", // Museum of Islamic Art in Qatar
+      image: qatarMuseumImage,
       action: { 
         text: "Join Early Access", 
         onClick: () => openSurveyModal()
@@ -20,7 +25,7 @@ const HeroSection = () => {
     {
       title: "Meet <span class='text-[#D4AF37]'>Zara</span>",
       subtitle: "Chat with our AI travel assistant for personalized Qatar recommendations",
-      bgClass: "bg-[url('https://images.unsplash.com/photo-1569949381669-ecf31ae8e613?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2000&q=80')]", // Doha skyline at night in Qatar
+      image: qatarTowerImage,
       action: { 
         text: "Chat Now", 
         href: "#chatbot"
@@ -29,7 +34,7 @@ const HeroSection = () => {
     {
       title: "Experience the <span class='text-[#D4AF37]'>Adventure</span>",
       subtitle: "Play our interactive travel adventure game and discover your travel personality",
-      bgClass: "bg-[url('https://images.unsplash.com/photo-1554709618-762a4a5f6933?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2069&q=80')]", // Qatar desert landscape
+      image: qatarCulturalPathImage,
       action: { 
         text: "Play Now", 
         href: "/game"
@@ -58,10 +63,16 @@ const HeroSection = () => {
       {slides.map((slide, index) => (
         <div 
           key={index}
-          className={`absolute inset-0 bg-cover bg-center transition-opacity duration-1000 ${
+          className={`absolute inset-0 transition-opacity duration-1000 ${
             currentSlide === index ? 'opacity-100' : 'opacity-0 pointer-events-none'
-          } ${slide.bgClass}`}
+          }`}
         >
+          {/* Background image with proper aspect ratio */}
+          <div 
+            className="absolute inset-0 bg-cover bg-center"
+            style={{ backgroundImage: `url(${slide.image})` }}
+          ></div>
+          
           {/* Dark overlay for better text visibility */}
           <div className="absolute inset-0 bg-black bg-opacity-50"></div>
           
