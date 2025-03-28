@@ -1,12 +1,12 @@
-import { useState, useEffect } from 'react';
+import React, { useState, useEffect } from 'react';
 import { Button } from '@/components/ui/button';
 import { useSurvey } from '@/context/SurveyContext';
 import { ChevronDown, ChevronRight } from 'lucide-react';
 
-// Import Qatar-specific images
-import qatarMuseumImage from '../../assets/florian-wehde-Do6yoytec5E-unsplash.jpg';
-import qatarTowerImage from '../../assets/bashir-mohd-0gSM4u8zfA8-unsplash.jpg';
-import qatarCulturalPathImage from '../../assets/jaanus-jagomagi-AZJAIiIn6BY-unsplash.jpg';
+// Qatar-specific images
+const qatarMuseumImage = '/florian-wehde-Do6yoytec5E-unsplash.jpg';
+const qatarTowerImage = '/bashir-mohd-0gSM4u8zfA8-unsplash.jpg';
+const qatarCulturalPathImage = '/jaanus-jagomagi-AZJAIiIn6BY-unsplash.jpg';
 
 const HeroSection = () => {
   const { openSurveyModal } = useSurvey();

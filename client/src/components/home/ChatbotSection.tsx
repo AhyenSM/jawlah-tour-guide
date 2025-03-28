@@ -31,13 +31,16 @@ export default function ChatbotSection() {
     <section 
       id="chatbot" 
       className="py-24 relative"
-      style={{
-        background: "url('/assets/bashir-mohd-0gSM4u8zfA8-unsplash.jpg')",
-        backgroundSize: 'cover',
-        backgroundPosition: 'center',
-        backgroundAttachment: 'fixed'
-      }}
     >
+      {/* Background image */}
+      <div className="absolute inset-0 overflow-hidden">
+        <img 
+          src="/bashir-mohd-0gSM4u8zfA8-unsplash.jpg" 
+          alt="Qatar Torch Tower" 
+          className="w-full h-full object-cover"
+        />
+      </div>
+      
       {/* Dark overlay */}
       <div className="absolute inset-0 bg-[#0C1D43] bg-opacity-90"></div>
       

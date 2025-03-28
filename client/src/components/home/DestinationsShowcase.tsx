@@ -1,51 +1,43 @@
-import { useState, useEffect } from 'react';
+import React, { useState, useEffect } from 'react';
 import { ChevronUp, ChevronDown, Clock } from 'lucide-react';
 import { Button } from '@/components/ui/button';
 
 const DestinationsShowcase = () => {
   const [currentSlide, setCurrentSlide] = useState(0);
   
+  // Qatar-specific images
+  const qatarMuseumImage = '/florian-wehde-Do6yoytec5E-unsplash.jpg';
+  const qatarTorchTowerImage = '/bashir-mohd-0gSM4u8zfA8-unsplash.jpg';
+  const qatarDesertImage = '/abuli-munavary-RsvErh4eirg-unsplash.jpg';
+  const qatarCulturalPathImage = '/jaanus-jagomagi-AZJAIiIn6BY-unsplash.jpg';
+  
   const destinations = [
     {
       name: "Museum of Islamic Art",
       location: "Doha",
       description: "One of the world's great museums, designed by I.M. Pei, dedicated to collecting, preserving, and displaying Islamic art.",
-      image: "https://images.unsplash.com/photo-1565623833408-d77e39b88af6?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2000&q=80",
+      image: qatarMuseumImage,
       comingSoon: true
     },
     {
-      name: "Souq Waqif",
-      location: "Traditional Market, Doha",
-      description: "A vibrant marketplace offering traditional Qatari goods, spices, textiles, and authentic cuisine in the heart of Doha.",
-      image: "https://images.unsplash.com/photo-1569949609029-b18a57d2ff86?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1973&q=80",
+      name: "Torch Tower",
+      location: "Aspire Zone, Doha",
+      description: "The iconic 300-meter tall skyscraper that housed officials during the 2006 Asian Games and now stands as a luxury hotel with panoramic views of Qatar.",
+      image: qatarTorchTowerImage,
       comingSoon: true
     },
     {
-      name: "Khor Al Adaid",
-      location: "Inland Sea, Southeastern Qatar",
-      description: "Experience the magical Inland Sea where the desert meets the ocean, with breathtaking dunes and traditional Bedouin camps.",
-      image: "https://images.unsplash.com/photo-1554709618-762a4a5f6933?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2069&q=80",
+      name: "Qatar Desert Safari",
+      location: "Various locations across Qatar",
+      description: "Experience the thrill of dune bashing, camel riding, and traditional Bedouin hospitality in Qatar's stunning desert landscapes.",
+      image: qatarDesertImage,
       comingSoon: true
     },
     {
-      name: "The Pearl-Qatar",
-      location: "Luxury Island, Doha",
-      description: "A man-made island spanning nearly four million square meters, featuring luxury shopping, fine dining, and Mediterranean-style marinas.",
-      image: "https://images.unsplash.com/photo-1605193420923-1936e220aac2?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2071&q=80",
-      comingSoon: true
-    },
-    {
-      name: "Katara Cultural Village",
-      location: "Doha",
-      description: "A cultural hub showcasing Qatar's traditions and hosting international events, exhibitions, and performances throughout the year.",
-      image: "https://images.unsplash.com/photo-1594708053019-5336680bab1f?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2070&q=80",
-      comingSoon: true
-    },
-    {
-      name: "National Museum of Qatar",
-      location: "Doha",
-      description: "A stunning museum designed by Jean Nouvel to reflect a desert rose, showcasing Qatar's rich history and culture through immersive exhibits.",
-      image: "https://images.unsplash.com/photo-1577102114237-9a16b85a021b?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2069&q=80",
+      name: "Cultural Pathways",
+      location: "Throughout Qatar",
+      description: "Explore Qatar's rich cultural heritage through carefully curated paths showcasing the country's history, architecture, and traditions.",
+      image: qatarCulturalPathImage,
       comingSoon: true
     }
   ];

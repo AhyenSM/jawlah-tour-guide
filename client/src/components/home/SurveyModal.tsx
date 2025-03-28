@@ -1,4 +1,4 @@
-import { useEffect } from 'react';
+import React, { useEffect } from 'react';
 import { Button } from '@/components/ui/button';
 import { useSurvey } from '@/context/SurveyContext';
 import { JOTFORM_SURVEY_URL } from '@/lib/constants';
