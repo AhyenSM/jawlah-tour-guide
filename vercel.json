@@ -1,10 +1,8 @@
 {
   "version": 2,
   "framework": "vite",
-  "build": {
-    "command": "cd client && npm run build",
-    "outputDirectory": "dist"
-  },
+  "buildCommand": "cd client && npm run build",
+  "outputDirectory": "client/dist",
   "public": "client/public",
   "rewrites": [
     { "source": "/(.*)", "destination": "/index.html" }
